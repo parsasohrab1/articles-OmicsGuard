@@ -1,0 +1,64 @@
+{
+ "note": "real TCGA PanCancer RNA-Seq (UCI 401); top-2000 variance genes chosen on the training part; logistic regression C=0.05; alpha=0.05",
+ "classes": [
+  "BRCA",
+  "COAD",
+  "KIRC",
+  "LUAD",
+  "PRAD"
+ ],
+ "iid": {
+  "accuracy": 0.9982587064676617,
+  "coverage": 0.9636815920398009,
+  "coverage_by_class": {
+   "BRCA": 0.9566666666666667,
+   "COAD": 0.944736842105263,
+   "KIRC": 0.9716216216216218,
+   "LUAD": 0.975,
+   "PRAD": 0.9691176470588235
+  },
+  "referral_rate": 0.036318407960199015
+ },
+ "open_set": {
+  "BRCA": {
+   "auroc_maxprob": 0.9978703703703704,
+   "unseen_referred_conformal": 0.8800000000000001,
+   "seen_referred_conformal": 0.02857142857142857,
+   "unseen_referred_maxprob": 1.0,
+   "seen_referred_maxprob": 0.050793650793650794,
+   "n_unseen": 300
+  },
+  "COAD": {
+   "auroc_maxprob": 0.9910398073381499,
+   "unseen_referred_conformal": 0.5,
+   "seen_referred_conformal": 0.0287292817679558,
+   "unseen_referred_maxprob": 1.0,
+   "seen_referred_maxprob": 0.04917127071823204,
+   "n_unseen": 78
+  },
+  "KIRC": {
+   "auroc_maxprob": 0.9986969595723354,
+   "unseen_referred_conformal": 0.5691780821917808,
+   "seen_referred_conformal": 0.031097560975609763,
+   "unseen_referred_maxprob": 1.0,
+   "seen_referred_maxprob": 0.045121951219512194,
+   "n_unseen": 146
+  },
+  "LUAD": {
+   "auroc_maxprob": 0.9983064689447669,
+   "unseen_referred_conformal": 0.9985815602836879,
+   "seen_referred_conformal": 0.033939393939393936,
+   "unseen_referred_maxprob": 1.0,
+   "seen_referred_maxprob": 0.04848484848484848,
+   "n_unseen": 141
+  },
+  "PRAD": {
+   "auroc_maxprob": 0.9928936245156745,
+   "unseen_referred_conformal": 0.9867647058823529,
+   "seen_referred_conformal": 0.04730538922155689,
+   "unseen_referred_maxprob": 1.0,
+   "seen_referred_maxprob": 0.06706586826347306,
+   "n_unseen": 136
+  }
+ }
+}
